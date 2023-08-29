@@ -1,0 +1,341 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{float}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{ Caracteristicile memoriei SDRAM DDR5 şi îmbunătăţirile acesteia în cadrul memoriei calculatorului \\
+{\footnotesize \textsuperscript{*}Double Data Rate Synchronous Dynamic Random-Access Memory}
+
+}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Momoi Alexandru}
+\IEEEauthorblockA{\textit{Inginerie Electrică şi Ştiinţa Calculatoarelor} \\
+\textit{Universitatea Transilvania }\\
+Braşov, Romania \\
+}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Olteanu Eduard Daniel}
+\IEEEauthorblockA{\textit{Inginerie Electrică şi Ştiinţa Calculatoarelor} \\
+\textit{Universitatea Transilvania }\\
+Braşov, Romania\\
+}
+}
+
+\maketitle
+
+\begin{abstract}
+ Acest document este bazat pe studiul personal al memoriei de tip DDR5 SDRAM \LaTeX
+\end{abstract}
+
+\begin{IEEEkeywords}
+component, formatting, style, styling, insert
+\end{IEEEkeywords}
+
+\section{Introducere}
+\subsection{Despre memoria DDR}
+
+
+Memoria de tip DDR (Double Data Rate) este un tip de memorie RAM (Random-Acces Memory), ce funcţionează pe baza transferului de date pe ambele fronturi ale semnalului de ceas, înlocuind modelul de memorie SDR SDRAM (Single Data Rate), ce se bazează pe transferul datelor doar pe frontul crescător.
+Termenul de "dual channel" se referă la un chip-set de plăci de bază cu viteza dublă de date (DDR), care este proiectat cu două canale de memorie în loc de unul singur. Modul dual-channel este o caracteristică ce a fost concepută pentru a reduce potenţialul blocaj de performanţă care există între procesor(CPU) şi memoria DRAM.
+
+\subsection{Variante de memorie DDR}
+
+Tehnologia DDR a fost implementată şi apărută pe piaţă începând cu anii 2000, dezvoltându-se mai multe variante îmbunătăţite pe parcursul anilor, acestea fiind : DDR2,DDR3,DDR4,DDR5, iar în prezent lucrându-se la tehnologia DDR6. Toate aceste variante sunt generaţii ale aceleaşi tehnologii, având în plus una faţă de cealaltă, viteze mai rapide şi alte îmbunătăţiri tehnice.
+
+
+\section{Îmbunătăţirile aduse de memoria tip DDR5}
+Actualul standard de memorie RAM, disponibil pentru consumatori din 2020, este varianta DDR5. Aceste memorii noi beneficiază de un bandwidth de două ori mai mare decât cea a precedentei şi sunt mai eficiente din punct de vedere energetic. Datorită acesteia, rata de transmisie a datelor este mult mai bună,variind de la 25,6 GB/s până la 67,2 GB/s. 
+DDR5 este o nouă generație de memorie RAM care oferă performanțe mai bune decât DDR4. Principalele caracteristici îmbunătățite aduse de DDR5 reprezintă viteza mai mare, capacitatea crescută, fiabilitatea și eficiența energetică mai bună.
+
+De asemenea, DDR5 introduce și o serie de caracteristici noi de siguranță precum protejarea datelor prin parolă și detectarea de erori pentru a asigura integritatea datelor. În continuare vom prezenta principalele caracteristici îmbunătățite ale memoriei.
+
+Viteză mai mare: DDR5 dispune de o viteză de transfer de date de până la 6400 MT/s (6.4 Gbps), comparativ cu 3200 MT/s (3.2 Gbps) pentru DDR4. Aceasta înseamnă că DDR5 poate transfera date de până la 50\% mai repede decât DDR4.
+
+
+Capacitate mai mare: DDR5 permite utilizarea de module cu o capacitate maximă de până la 16 GB, comparativ cu 8 GB pentru DDR4.
+
+
+Eficiență energetică mai bună: DDR5 a fost proiectat cu scopul de a reduce consumul de energie cu până la 30 \% față de DDR4 , prin funcționarea cu o tensiune mai mică.
+
+Fiabilitate mai bună: DDR5 include caracteristici precum ECC (Error Correction Check sau Corecția erorilor) și RA (Redundanță activă) pentru a îmbunătăți fiabilitatea și integritatea datelor.
+
+
+
+
+
+\subsection{Specificaţii Memorie}
+
+Câteva exemple de performanțe ale memoriei DDR5 se remarcă în câteva modele de cipuri cum ar fi DDR5-3200, cu frecvența de 800 MHz și rata de transfer de 25,60 GB/s, DDR5-4000 cu frecvența de 1000 MHz ce atinge rata de transfer de 32 GB/s și în final, ultimul model DDR5-8400 cu frecvența de 2100 MHz și rata de transfer 67,20 GB/s.
+% \begin{table}[ht]
+% \centering
+
+% \caption{Specificații DDR}
+% \begin{tabular}{|c| c| c|}
+%     \hline
+%   Model Cip & Frecvenţa & Rata de transfer\\
+%     \hline
+%     DDR5-3200 & 800,00 MHz & 25,60 GB/s\\
+%     \hline
+%     DDR5-3600 &	900,00 MHz	& 28,80 GB/s \\
+%     \hline
+%     DDR5-4000 &	1000,00 MHz &	32,00 GB/s \\
+%     \hline
+%     DDR5-8000 &	2000,00 MHz &	64,00 GB/s\\ 
+%     \hline
+%     DDR5-8400 &	2100,00 MHz &	67,20 GB/s\\ 
+%     \hline
+    
+% \end{tabular}
+
+% \footnotesize Sursa:Wikipedia \cite{Wiki}
+% \end{table}
+
+
+
+% \begin{figure}[htbp]
+% \centerline{\includegraphics[width=\columnwidth,keepaspectratio]{Capture.JPG}}
+% \label{fig}
+% \end{figure}
+
+\subsection{Transfer de date}
+DDR5 îmbunătăţeşte rata transferului de date faţă de generaţiile anterioare. Ratele de transfer aşteptate vor fi între 3200 si 6400 MT/s (Megatransfers/seconds). DDR5 continuă să utilizeze reţele de date single-ended ca şi în cazul generaţiilor anterioare\cite{8401666}.
+ Potrivit studiilor de caz, lăţimea de bandă este de 36 de ori mai mare decât cea a unui modul DDR4 cu rata de transfer de 3200 MT/s. O memorie de tip DDR5 cu rata de transfer de 4800 MT/s oferă o performanţă crescută cu 87 la sută faţă de o memorie similară, DDR4 cu rata de transfer de 3200 MT/s.
+ 
+ \section{Module de memorie Dual Inline (DIMM)}
+ Aplicatiile moderne de server necesită arhitecturi de memorie de mare capacitate, o viteză mare de transfer de date şi o latenţă scăzută. Legătura dintre CPU şi memorie trebuie să transmită date cu o viteză crescută către memoria cunoscută sub numele de module de memorie dual inline (DIMM). Cum s-a precizat şi mai sus, frecvenţele de I/O au fost dublate cu fiecare tehnologie, DDR4 ajungând la o rată de date duală de până la 3.2 Gbit/s. Prin urmare, DDR5-SDRAM a fost conceput să atingă dublul ratei generaţiei anterioare şi anume 6.4 Gbit/s. Ratele mai mari de date şi capacitatea de memorie mai mare sunt două cerinţe care depind una de cealaltă: creşterea capacităţii de memorie creşte sarcina capacitivă şi prin urmare scade lăţimea de bandă a canalului, ce are ca rezultate frecvenţe I/O mai mici\cite{8010117}.
+ 
+ Modulul de memorie DIMM este un tip de memorie de 64 biți folosită pentru un transfer rapid de date, ce conţine una sau mai multe cipuri de memorii RAM pe o placă mică de circuit, cu pini ce o conectează la placa de bază al computerului. Modulele DIMM stochează
+ fiecare bit de date într-o celulă de memorie separată, iar calea de date este de 64 biţi,întrucât procesoarele utilizate în computerele personale au o lăţime de date de 64 de biţi.
+
+\section{Efectele ISI asupra memoriei DDR}
+Canalele DDR sunt predispuse la efecte ISI bazate pe reflexie. Fenomenul de ISI zis şi "Intersymbol interference" este o formă de distorsiune a unui semnal, în care un simbol interferează cu alte simboluri adiacente. Acest fenomen este unul nedorit, întrucat simbolurile anterioare au un efect similar cu zgomotul, făcând astfel comunicarea mai puţin fiabilă şi sigură. ISI este de obicei cauzat de propagarea pe mai multe căi sau de răspunsul în frecvenţă inerent al unui canal de comunicatie. Reflexiile pot apărea și din cauza lungimii scurte a traseelor.Aceste reflexii pot afecta calitatea semnalului și pot duce la erori de transmisie.
+Astfel, tehnicile de egalizare ce atenuează aceste reflexii vor fi utile pentru ratele de date mai mari ale DDR5.
+\\
+În timp ce topologiile punct la punct din DDR5 ar putea funcționa fără egalizare, topologiile care implică DIMM-uri sau alte plăci suplimentare vor necesita egalizare la DRAM și controler. DFE (Decision Feedback Equalizer) este deosebit de util în atenuarea efectelor ISI reflectorizante implicate în canalele DDR\cite{8401666}.
+\\
+DFE combină informațiile de decizie cu un feedback adaptiv al egalizatorului pentru a îmbunătăți performanța sistemului de comunicații. Prin utilizarea unui algoritm de adaptare, DFE poate estima și compensa dinamic distorsiunile canalului, ceea ce permite transmisia de semnale de mare calitate chiar și în medii cu multă interferență. 
+DFE încearcă să compenseze aceste efecte ISI prin estimarea comportamentului unei tranziții pe biții ulteriori și încercarea de a anula influența asupra acelor biți ulteriori. Prin utilizarea DFE, se pot atenua efectele ISI reflexive și reducerea erorilor de transmisie.
+
+
+
+
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[scale=0.3]{ISI.jpg}
+%     \caption{Semnal ISI}
+%     \label{fig:isi}
+% \end{figure}
+
+\section{Soluția pentru serverele viitorului}
+Serviciile Cloud au influențat nevoia de memorii DDR mai performante pentru viitoarele servere. Din acest motiv au fost create noile memorii DDR5 care operează la tensiuni reduse, operând cu cea mai înaltă viteză de 7.2 Gbps și cea mai mare capacitate de memorie de 512 GB.
+Problema pe care acest modul nou le-a adus, a fost necesitatea pentru un I/O capabil pentru noile performanțe. Principalele probleme remarcate au fost fluctuații de curent instabile, creșteri de consum și temperaturi ridicate, toate acestea trebuind să fie rezolvate \cite{9567190}.
+
+\subsection{Performanțe remarcate în server}
+Pentru a măsura performanțele, s-a configurat un server cu opt module DDR5 DRAMs de 512 GB memorie de la producatorul Samsung, cu un total de 4096 GB RAM.
+DDR5 oferă o performanță cu 85\% mai mare sau 1.4x mai bună decât DDR4. Viteza de transfer de date este de 7.2 GB/s sau 2.2x mai mare în DDR5 comparativ cu DDR4. Capacitatea de memorie este de 512 Gb sau 2x mai mare în DDR5 față de DDR4. Voltajul necesar este de 1.1 V sau 0.92x mai mic în DDR5 decât în DDR4.
+
+Noile module lucrează cu două sub canale independente care cresc eficiența magistralei cu 18\% și lățimea de bandă de până la 7200 Mbps în comparație cu modelul anterior.
+Pentru a atinge această lățime de bandă, în interiorul memoriei s-a utilizat un circuit DFE (Decision feedback equalizer), care are rolul de a amplifica componentele de înaltă frecvență ale unui semnal fără a amplifica zgomotul. Acest circuit disipă din efectele ISI.
+
+\subsection{Capacitatea de memorie ridicată}
+Pentru a atinge această capacitate de memorie ridicată au fost necesare unele modificări la arhitectura memoriei:
+\begin{itemize}
+    \item Reducerea distanței între semi-conductori cu 40\%.
+    \item S-au folosit materiale mai subțiri.
+    \item Interconectare TSV fără erori.
+    \item Răcire sporită cu o impendață a fluxului de aer mai scăzută.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.4]{aircooling.png}
+    \caption{Noua arhitectură și modul prin care îmbunătățește fluxul de aer.\cite{9567190}}
+    \label{fig:airflow}
+\end{figure}
+
+
+\subsection{Consum redus de energie}
+
+Modificarea arhitecturii memoriei a ajutat și la consumul redus de energie. Aceasta a fost realizată prin introducerea unui regulator de voltaj pe modul și prin modificarea structurii de siliciu, așa cum se regăsește în Figura~\ref{fig:silicu} .
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{voltage.jpg}
+    \caption{Regulatorul de voltaj și modificarea structurii de siliciu de pe modul.}
+    \label{fig:silicu}
+\end{figure}
+Aceste modificări au redus apariția zgomotului la operații cu voltaj scăzut  și a crescut eficiența energetică cu 30\%. \\
+Regulatorul de voltaj din DDR5 permite ca tensiunea alimentării să fie redusă la 1.1V, față de 1.2V pentru DDR4. Acest lucru reduce consumul de energie în timp ce memoria RAM este utilizată și poate ajuta la extinderea durabilității bateriei în cazul în care sistemul este alimentat de o baterie.
+
+Modificarea structurii de siliciu din DDR5 permite o mai bună gestionare a căldurii, ceea ce poate ajuta la o mai bună eficiență energetică.
+
+Aceste caracteristici de energie redusă pot ajuta sistemul să fie mai eficient energetic și să se extindă durabilitatea bateriei, ceea ce poate fi benefic pentru utilizatorii care folosesc sistemele mobile sau laptopurile.
+
+\section{Performanța și caracteristicile memoriei: o analiză comparativă a DDR5, LPDDR și GDDR }
+Memoria este un element esențial al oricărui sistem informatic, iar alegerea tipului potrivit de memorie poate avea un impact semnificativ asupra performanței și eficienței energetice a acestuia. În acest capitol, vom analiza comparativ performanța și caracteristicile memoriei DDR5, LPDDR și GDDR.
+
+DDR5 este o nouă generație de memorie cu performanțe ridicate, care oferă viteze de transfer de date mai mari și o capacitate de memorie mai mare decât generația anterioară, DDR4. LPDDR, sau Low Power Double Data Rate, este o tehnologie de memorie proiectată pentru a oferi performanțe ridicate cu un consum redus de energie, fiind utilizată în principal în dispozitivele mobile. GDDR, sau Graphics Double Data Rate, este o tehnologie de memorie utilizată în principal în plăcile grafice și în alte aplicații grafice solicitante.
+
+Vom compara caracteristicile și performanțele acestor tipuri de memorii, precum vitezele de transfer de date, latența, capacitatea și consumul de energie, pentru a ajuta la înțelegerea diferențelor dintre ele și pentru a determina care tip de memorie se potrivește cel mai bine necesităților și utilizării.
+
+\subsection{LPDDR}
+LPDDR (Low Power Double Data Rate) este o tehnologie de memorie utilizată în principal în dispozitive mobile, cum ar fi telefoanele inteligente, tabletele și laptopurile. LPDDR este proiectat pentru a oferi performanțe ridicate cu un consum redus de energie, ceea ce este esențial pentru dispozitivele mobile care au o durată limitată de viață a bateriei.
+
+LPDDR este similar cu DDR în ceea ce privește modul în care funcționează și oferă aceleași avantaje, cum ar fi vitezele de transfer de date mai mari și latențe mai mici. Cu toate acestea, LPDDR folosește un voltaj mai mic și o tehnologie de construcție diferită pentru a reduce consumul de energie.
+
+\subsection{GDDR}
+GDDR (Graphics Double Data Rate) este o tehnologie de memorie utilizată în principal în plăcile grafice și în alte aplicații grafice solicitante. Aceasta este proiectată pentru a oferi performanțe ridicate și viteze de transfer de date mari, care sunt necesare pentru procesarea datelor grafice și pentru afișarea imaginilor în timp real.
+
+GDDR este similar cu DDR în ceea ce privește modul în care funcționează, dar este proiectat să funcționeze la viteze și latențe mai mari pentru a satisface nevoile aplicațiilor grafice. De asemenea, GDDR are un bus de date mai larg decât DDR, ceea ce permite transferul de date mai rapid.
+
+GDDR este utilizat în plăcile grafice din computere și console de jocuri, precum și în alte aplicații grafice solicitante, cum ar fi sisteme de afișare digitală sau sisteme de realitate virtuală.
+
+\subsection{Viteze de transfer}
+
+Vitezele de transfer de date pentru DDR5 variază între 3200 Mbps și 6400 Mbps, în timp ce LPDDR5 poate atinge viteze de transfer de date de până la 6400 Mbps. În ceea ce privește GDDR, vitezele de transfer de date pentru GDDR5 pot ajunge la 8500 Mbps, iar pentru GDDR6, vitezele de transfer de date pot ajunge la 16000 Mbps.
+
+Vitezele de transfer de date sunt importante pentru a determina cât de rapid sistemul poate accesa și procesa datele din memorie. Cu cât vitezele sunt mai mari, cu atât sistemul poate funcționa mai rapid și poate prelucra mai multe date într-un timp mai scurt.
+
+Acestea sunt numere aproximative, deoarece vitezele de transfer de date pot varia în funcție de producător și de specificațiile individuale ale fiecărei versiuni. Este important să se verifice specificațiile individuale ale produselor pentru a obține vitezele de transfer de date exacte.
+
+\subsection{Consum de energie}
+
+DDR5 este proiectat să funcționeze la un voltaj mai mic decât DDR4, de aproximativ 1.1V, ceea ce duce la un consum redus de energie. LPDDR5 poate funcționa la un voltaj de doar 0,6V, ceea ce duce la un consum redus de energie și o durată mai lungă a bateriei.
+
+GDDR5 poate consuma mai multă energie decât DDR5 sau LPDDR5, dar este optimizat pentru performanțe ridicate. GDDR6 este mai eficient din punct de vedere al consumului de energie decat predecesorul său, GDDR5.
+
+Este important de menționat că aceste numere sunt aproximative și variază în funcție de producător și de specificațiile individuale ale fiecărei versiuni.
+
+
+
+
+\section{DDR 5 în computerul personal}
+Într-un sistem tip computer de birou, a fost configurat în jurul noului procesor de la Intel, Intel Core i9-12900K, pentru a măsura diferențele de performață între memoriile DDR5 și DDR4. Acest test de performanță a fost realizat prin rularea a diferitor sarcini obișnuite, precum Microsoft Office, suita Adobe sau jocuri.
+
+\begin{table}[H]
+\centering
+\caption{Adobe Photoshop 2022 scor per total}
+
+\label{AdobePh}
+
+\begin{tabular}{|c|c|}
+
+\hline
+Memorii   & Scor                                                     \\ \hline
+DDR4-3200 & 8121                                                     \\ \hline                                                
+DDR5-6400 & 8091                                                     \\ \hline
+DDR5-5200 & 8048                                                     \\ \hline
+DDR4-4000 & 8035                                                     \\ \hline
+DDR5-5600 & 8010                                                     \\ \hline
+DDR5-6000 & 8004                                                     \\ \hline
+DDR4-3600 & 7990                                                     \\ \hline
+DDR5-4800 & 7884                                                     \\ \hline
+DDR4-2133 & 7402                                                     \\ \hline
+\end{tabular}
+
+
+\footnotesize Cu cât este mai mare scorul cu atât este mai bine
+\\
+\footnotesize Sursa: tom'sHARDWARE \cite{Toms}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Adobe Lightroom 2022 scor per total}
+
+\label{AdobeLi}
+
+\begin{tabular}{|c|c|}
+
+\hline
+Memorii   & Scor                                                     \\ \hline
+DDR5-6400 & 14735                                                     \\ \hline
+DDR5-6000 & 12622                                                     \\ \hline
+DDR5-5200 & 12550                                                     \\ \hline
+DDR5-5600 & 12420                                                     \\ \hline
+DDR5-4800 & 12195                                                     \\ \hline
+DDR4-4000 & 11531                                                     \\ \hline
+DDR4-3600 & 11425                                                     \\ \hline
+DDR4-3200 & 10978                                                     \\ \hline               
+DDR4-2133 & 10207                                                     \\ \hline
+\end{tabular}
+
+
+\footnotesize Cu cât este mai mare scorul cu atât este mai bine
+\\
+\footnotesize Sursa: tom'sHARDWARE \cite{Toms}
+\end{table}
+
+
+
+
+\begin{table}[H]
+\centering
+\caption{Far Cry 6}
+
+\label{joc}
+
+\begin{tabular}{|c|c|}
+
+\hline
+Memorii   & Frame-uri pe secundă                                            \\ \hline
+DDR5-6000 & 133                                                     \\ \hline
+DDR5-5600 & 132                                                     \\ \hline
+DDR5-6400 & 132                                                     \\ \hline
+DDR5-5200 & 130                                                     \\ \hline
+DDR4-3600 & 130                                                     \\ \hline
+DDR4-4000 & 130                                                     \\ \hline
+DDR4-3200 & 130                                                     \\ \hline 
+DDR5-4800 & 128                                                     \\ \hline                                           
+DDR4-2133 & 113                                                     \\ \hline
+\end{tabular}
+
+
+\footnotesize Cu căt mai multe frameuri cu atât este mai bine
+\\
+\footnotesize Sursa: tom'sHARWARE \cite{Toms}
+\end{table}
+Într-un test realizat pe programele Office 365, se observă că DDR5-6000 obține cel mai bun scor cu 8647, urmat de DDR5-5600 cu 8554 și DDR4-3200 cu 8534. DDR5 obține în general scoruri mai bune decât DDR4.
+Din rezultatele testelor se poat remarca că diferențele între memorii sunt mici în aplicațiile standard ce sunt folosite de zi cu zi. 
+La categoria jocuri video (Tabel~\ref{joc}), diferențele de performanță sunt foarte mici între un modul DDR5 și DDR4, sau uneori inexistente.
+Totuși, în testele executate pe aplicația Adobe Lightroom (Tabel~\ref{AdobeLi}) se remarcă o îmbunătățire în performanță de 27.7\% între cele mai perfomante module DDR4 și DDR5. Din acest experiment observăm că eficiența ridicată se regăsește doar în anumite sarcini.
+\\
+Performanțele DDR5 în lucru cu programele pe calculator sunt îmbunătățite față de DDR4 datorită vitezelor mai mari de transfer și capacității mai mari a modulelor de memorie.
+
+Vitezele mai mari de transfer înseamnă că programele pot accesa informațiile din memoria RAM mai rapid, ceea ce poate reduce timpul de încărcare al programelor și poate îmbunătăți răspunsul sistemului în timp ce programele sunt utilizate.
+
+Capacitatea mai mare a modulelor de memorie înseamnă că sistemul poate ține mai multe programe deschise simultan fără a suferi de scăderea performanței. Acest lucru poate fi util pentru utilizatorii care trec des între programe și care au nevoie de acces rapid la programe deschise în prealabil.
+
+ DDR5 oferă performanțe mai bune și viteze de transfer mai mari decât DDR4, ceea ce poate fi benefic pentru utilizatorii care rulează programe solicitante și care au nevoie de un acces rapid la date. În același timp, DDR5 are o capacitate de memorie mai mare și consumă mai puțină energie.
+
+Cu toate acestea, dacă utilizatorul nu are nevoie de performanțe ridicate sau nu rulează programe foarte solicitante, DDR4 poate fi suficient pentru utilizarea programului Office 365. În concluzie, este important să se evalueze necesitățile individuale și să se ia o decizie în funcție de acestea.
+
+Comparativ cu DDR4, DDR5 poate oferi performanțe mai bune, cum ar fi viteze de transfer mai mari și capacități mai mari de stocare, ceea ce poate duce la o experiență a utilizatorului mai bună și mai rapidă.
+
+
+\section{Concluzie}
+În concluzie, DDR5 oferă o viteză de transfer a datelor și o capacitate mai mare, precum și o eficiență energetică îmbunătățită și caracteristici de securitate suplimentare. Noua tehnologie DDR5 este rapidă dar doar în anumite sarcini distincte se pot remarca noile îmbunătățiri, precum servere sau sarcini cu workload ridicat, care necesită multă memorie RAM și viteză sporită.
+\\
+% O comparație rapidă între cel mai ieftin modul DDR5-4800 32GB C40 și un modul DDR4-3600 32GB C16, oferă o îmbunățirea a performanței de doar 6\% și o creștere de preț de 99\%.
+\\
+Noua arhitectură DDR5 reprezintă viitorul memoriilor RAM, cu noul modul PMIC (Power Management Integrated Circuit) implementate direct pe plăcuță, în trecut fiind prezent pe placa de bază, care aduce un consum redus de 20\% în comparație cu modelul anterior, datorat reducerii puterii și prin înlocuirea canalului de 64 de biți în două sub canale de 32 biți cu intenția de a scădea latența.
+\\
+Vitezele impresionante de până la 7200 Mbps al arhitecturii DDR5, fac față în mod eficient la sarcinile complexe de lucru cu date cerute. Iar din punct de vedere al gestionării energiei și stabilitatea sursei de alimentare, tehnologia DDR5 este alegerea durabilă pentru mediul înconjurător.
+
+
+% \clearpage
+\bibliographystyle{IEEEtran}
+\bibliography{bibliography.bib}
+
+\end{document}
